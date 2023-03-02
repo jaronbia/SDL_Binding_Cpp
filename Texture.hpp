@@ -5,6 +5,8 @@
 #include <cstddef>
 #include "Surface.hpp"
 
+namespace SDL2 {
+
 class Texture {
     private:
         int m_width;
@@ -24,3 +26,5 @@ class Texture {
         
         SDL_Texture* getTexture() { return m_texture; }
 };
+
+}

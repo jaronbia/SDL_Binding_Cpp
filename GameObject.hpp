@@ -4,6 +4,8 @@
 #include "Window.hpp"
 #include "Renderer.hpp"
 
+namespace SDL2 {
+
 class GameObjectState {
     private:
         bool contin{true};
@@ -34,3 +36,5 @@ class GameObject {
         void run();
         void quit();
 };
+
+}

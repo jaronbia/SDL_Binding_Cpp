@@ -3,6 +3,8 @@
 #include "Surface.hpp"
 #include "Texture.hpp"
 
+namespace SDL2 {
+
 //--------------------------------------------------------------------------------------------------------------
 void Renderer::
 render(Texture* txt, int x, int y, SDL_Rect* src) {
@@ -70,4 +72,6 @@ getRectParams(Texture* txt, int x, int y, SDL_Rect* src) const {
     }
 
     return renderQuad;
+}
+
 }
