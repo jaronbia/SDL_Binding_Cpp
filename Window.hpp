@@ -6,6 +6,8 @@
 #include <array>
 #include <string>
 
+namespace SDL2 {
+
 class Window {
     private:
         int m_width;
@@ -27,3 +29,5 @@ class Window {
 
         SDL_Window* getWindow() { return m_window; }
 };
+
+}

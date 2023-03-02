@@ -4,6 +4,8 @@
 #include <SDL2/SDL_surface.h>
 #include <stdexcept>
 
+namespace SDL2 {
+
 //--------------------------------------------------------------------------------------------------------------
 void Surface::
 create(SDL_Window* window) {
@@ -38,3 +40,5 @@ optimize() {
 //     stretchRect.h = h;
 //     SDL_BlitScaled( updatedSurface->m_surface, NULL, m_surface, &stretchRect );
 // }
+
+}

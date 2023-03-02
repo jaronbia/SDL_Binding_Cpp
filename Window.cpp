@@ -6,6 +6,8 @@
 #include <utility>
 #include "Renderer.hpp"
 
+namespace SDL2 {
+
 //--------------------------------------------------------------------------------------------------------------
 void Window::
 create() {
@@ -33,4 +35,6 @@ create(const std::string title, int xpos, int ypos, int width, int height, int f
                                 flags);
 
     if( m_window == nullptr ) throw std::logic_error("Window could not be created"); 
+}
+
 }

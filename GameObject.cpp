@@ -6,6 +6,8 @@
 #include <cstddef>
 #include <iostream>
 
+namespace SDL2 {
+
 void GameObject::
 initialize(int index, Uint32 flags) {
     // Initialize SDL
@@ -57,3 +59,4 @@ handleEvent(SDL_Event& event) {
     else gameEvent( event );
 }
 
+}

@@ -6,6 +6,8 @@
 #include <SDL2/SDL_surface.h>
 #include "Renderer.hpp"
 
+namespace SDL2 {
+
 class Surface {
     friend class Renderer;
     private:
@@ -29,3 +31,5 @@ class Surface {
         int width()  { return m_surface->w; }
         int height() { return m_surface->h; }
 };
+
+}

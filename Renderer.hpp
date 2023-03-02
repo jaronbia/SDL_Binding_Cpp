@@ -10,6 +10,8 @@
 #include "Window.hpp"
 #include "Texture.hpp"
 
+namespace SDL2 {
+
 class Surface;
 
 class Renderer {
@@ -73,3 +75,5 @@ class Renderer {
         Texture* createTexture(Surface* surface);
         Texture* createTexture(TTF_Font* font, std::string text, SDL_Color color);
 }; 
+
+}
