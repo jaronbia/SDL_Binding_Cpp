@@ -32,7 +32,8 @@ class GameObject {
         Renderer* getRenderer() { return m_renderer; }
 
     public:
-        GameObject() = default;
+        GameObject() : m_window{ new Window() }, 
+                       m_renderer{ new Renderer() } {}
         ~GameObject() = default;
         
         void initialize(int index, Uint32 flags);
