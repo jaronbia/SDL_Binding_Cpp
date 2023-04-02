@@ -27,6 +27,10 @@ class Window {
             m_height = h;
         }
 
+        void setTitle(const std::string title) {
+            SDL_SetWindowTitle(m_window, title.c_str());
+        }
+
         SDL_Window* getWindow() { return m_window; }
 };
 

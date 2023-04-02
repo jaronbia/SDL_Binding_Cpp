@@ -28,6 +28,9 @@ class GameObject {
         virtual void gameLogic() = 0;
         virtual void gameEvent(SDL_Event& event) = 0;
 
+        Window*   getWindow()   { return m_window; }
+        Renderer* getRenderer() { return m_renderer; }
+
     public:
         GameObject() = default;
         ~GameObject() = default;
