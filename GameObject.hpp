@@ -21,10 +21,9 @@ class GameObject {
         Window*         m_window{nullptr};
         Renderer*       m_renderer{nullptr};
 
+    protected:
         virtual void poll(SDL_Event& event);
         virtual void handleEvent(SDL_Event& event);
-
-    protected:
         virtual void gameLogic() = 0;
         virtual void gameEvent(SDL_Event& event) = 0;
 
