@@ -21,8 +21,8 @@ class GameObject {
         Window*         m_window{nullptr};
         Renderer*       m_renderer{nullptr};
 
-        void poll(SDL_Event& event);
-        void handleEvent(SDL_Event& event);
+        virtual void poll(SDL_Event& event);
+        virtual void handleEvent(SDL_Event& event);
 
     protected:
         virtual void gameLogic() = 0;
@@ -34,10 +34,10 @@ class GameObject {
     public:
         GameObject() : m_window{ new Window() }, 
                        m_renderer{ new Renderer() } {}
-        ~GameObject() = default;
+        virtual ~GameObject() = default;
         
         void initialize(int index, Uint32 flags);
-        void run();
+        virtual void run();
         void quit();
 };
 
